@@ -1,0 +1,5 @@
+name: SkyWalls
+version: '${project.version}'
+main: cc.zjlsx.skywalls.Main
+authors: [ zjls ]
+description: 空岛战墙
