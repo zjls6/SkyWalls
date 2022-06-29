@@ -6,7 +6,7 @@
 
     <groupId>cc.zjlsx</groupId>
     <artifactId>SkyWalls</artifactId>
-    <version>1.0</version>
+    <version>1.0.7</version>
     <packaging>jar</packaging>
 
     <name>SkyWalls</name>
