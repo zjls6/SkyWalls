@@ -3,8 +3,8 @@ package cc.zjlsx.skywalls.enums;
 import net.md_5.bungee.api.ChatColor;
 
 public enum Message {
-    Enable("&a插件已开启"),
-    Disable("&c插件已关闭"),
+    Enable("%prefix% &a插件已开启"),
+    Disable("%prefix% &c插件已关闭"),
     Player_Only("&c你不能在控制台执行此命令"),
     No_Permission("&c你没有执行此命令的权限"),
     Player_Not_Online("&c该玩家不在线"),
