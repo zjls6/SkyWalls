@@ -12,6 +12,7 @@ import org.bukkit.command.TabExecutor;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -30,6 +31,7 @@ public class SkyWallsCommand implements TabExecutor {
             return true;
         }
         String subCommandName = args[0];
+        String[] subCommandArgs = Arrays.copyOfRange(args, 1, args.length);
         Optional<SubCommand> optionalSubCommand = subCommands.stream().filter(subCommand -> subCommand.getName().equals(subCommandName)).findFirst();
         if (!optionalSubCommand.isPresent()) {
             sendHelpMessage(sender);
@@ -45,10 +47,10 @@ public class SkyWallsCommand implements TabExecutor {
                 sender.sendMessage(Message.Player_Only.getMessage());
                 return true;
             }
-            subCommand.execute((Player) sender, args);
+            subCommand.execute((Player) sender, subCommandArgs);
             return true;
         }
-        subCommand.execute(sender, args);
+        subCommand.execute(sender, subCommandArgs);
         return true;
     }
 

@@ -41,7 +41,7 @@ public abstract class SubCommand {
      * The method that will be run once the command is executed
      *
      * @param sender the console sender that executed the command
-     * @param args   arguments
+     * @param args  subcommand arguments
      */
     public void execute(CommandSender sender, String[] args){
 
@@ -50,7 +50,7 @@ public abstract class SubCommand {
     /**
      * The method that will be run once the command is executed by player
      * @param player the player that executed this command
-     * @param args arguments
+     * @param args subcommand arguments
      */
     public void execute(Player player, String[] args){
 
